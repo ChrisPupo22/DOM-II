@@ -10,9 +10,21 @@ colorNav.addEventListener('mouseout', event =>{
     event.target.style.color = 'black';
 });
 
-let funBusAnim = document.querySelector('h1');
-console.log(funBusAnim);
+let btnColor = document.querySelector('.btn');
+console.log(btnColor);
 
-funBusAnim.addEventListener('select', event =>{
-    event.target.style.color = 'red';
-})
+
+btnColor.addEventListener('dblclick', event =>{
+    event.target.style.background = 'firebrick';
+});
+
+let bottomImg = document.querySelector('.boat-pic');
+console.log(bottomImg);
+
+bottomImg.addEventListener('click', event =>{
+    event.target.style.border = '2px dashed orange';
+});
+
+bottomImg.addEventListener('dblclick', event =>{
+    event.target.style.border = '5px dotted black'
+});
